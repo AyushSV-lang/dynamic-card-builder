@@ -8,7 +8,7 @@ A slick, fully client-side **profile & product card generator** built with nothi
 
 ## 🚀 Live Demo
 
-👉 [View it live here]([https://ayushsv-lang.github.io/dynamic-card-builder/](https://ayushsv-lang.github.io/dynamic-card-builder/)) ← *(replace with your GitHub Pages link)*
+👉 [View it live here](https://ayushsv-lang.github.io/dynamic-card-builder/)
 
 ---
 
