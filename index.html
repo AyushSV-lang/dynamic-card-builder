@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A dynamic card builder for teams and products">
+    <title>Dynamic Card Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="sidebar">
+            <h2>Builder & Preview</h2>
+
+            <form>
+                <label for="Name">Name</label>
+                <input required id="Name" type="text" placeholder="Enter Name" maxlength="20">
+
+                <label for="Status">Badge/Status</label>
+                <input required id="Status" type="text" placeholder="Enter Your Position" maxlength="15">
+
+                <label for="Bio">Bio</label>
+                <textarea required name="Bio" id="Bio" placeholder="Write a short bio..."></textarea>
+
+                <label for="Option">Gender</label>
+                <select name="Theme Options" id="Option" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+
+                <button id="formCard">Generate Card</button>
+            </form>
+
+            <h2 id="previewtag">Live Preview</h2>
+
+            <div class="card">
+                <div class="img_info">
+
+                    <div class="imgbox">
+                        <img src="https://static.vecteezy.com/system/resources/previews/042/332/098/non_2x/default-avatar-profile-icon-grey-photo-placeholder-female-no-photo-images-for-unfilled-user-profile-greyscale-illustration-for-socail-media-web-vector.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="info">
+                        <h3>Name</h3>
+                        <p>Status</p>
+                    </div>
+
+                </div>
+
+                <p>Your Bio Goes here....</p>
+            </div>
+
+        </div>
+
+
+
+        <div class="wrapper">
+            <h2>Live Catalog</h2>
+            <div class="card_wrapper">
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
