@@ -115,15 +115,15 @@ wrapper.addEventListener('click',(e)=>{
 })
 
 inpName.addEventListener('input',()=>{
-    previewName.textContent=inpName.value
+    previewName.textContent=inpName.value.trim()
 })
 
 inpBio.addEventListener('input',()=>{
-    previewBio.textContent=inpBio.value
+    previewBio.textContent=inpBio.value.trim()
 })
 
 inpStatus.addEventListener('input',()=>{
-    previewStatus.textContent=inpStatus.value
+    previewStatus.textContent=inpStatus.value.trim()
 })
 
 inpOption.addEventListener('change',()=>{
@@ -137,10 +137,15 @@ inpOption.addEventListener('change',()=>{
 Form.addEventListener('submit',(e)=>{
     e.preventDefault()
 
-    let obj={
-        cardName:inpName.value,
-        cardStatus:inpStatus.value,
-        cardBio:inpBio.value,
+    if(inpName.value.trim()==='' || inpStatus.value.trim()==='' || inpBio.value.trim()===''){
+        alert('Fill all the Required fields')
+        return
+    }
+    else {
+        let obj={
+        cardName:inpName.value.trim(),
+        cardStatus:inpStatus.value.trim(),
+        cardBio:inpBio.value.trim(),
         cardGender:inpOption.value
     }
 
@@ -149,6 +154,7 @@ Form.addEventListener('submit',(e)=>{
     localStorage.setItem('card',JSON.stringify(cardArr))
     loader()
             reset()
+    }
             
 })
 
